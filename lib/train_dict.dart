@@ -8,14 +8,15 @@ class Train_dictionary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgrounddef,
       appBar: AppBar(
-        backgroundColor: tdTiledef,
+        backgroundColor: tiledef,
         centerTitle: true,
         title: Text(
           "Flashcards",
           style: TextStyle(
-              fontSize: 25,
-              color: tdText,
+              fontSize: textsizeheader,
+              color: textdef,
             ),
         ),
       ),
@@ -27,7 +28,7 @@ class Train_dictionary extends StatelessWidget {
                 height: heightwordTile,
                 width: widthwordTile,
                 decoration: BoxDecoration(
-                    color: tdTiledef,
+                    color: tiledef,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.all(Radius.circular(40))),
                 child: Column(
@@ -35,7 +36,7 @@ class Train_dictionary extends StatelessWidget {
                     children:[
                       Text(
                         "Тренировать словарь",
-                        style: TextStyle(fontSize: 20, color:  tdText),
+                        style: TextStyle(fontSize: textsizedef, color:  textdef),
                       ),
                     ]),
               ),

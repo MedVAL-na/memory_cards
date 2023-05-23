@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:memory_cards/tile_sizes.dart';
 import 'package:memory_cards/train_dict.dart';
 
 import 'custom_colors.dart';
@@ -43,14 +44,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgrounddef,
       appBar: AppBar(
-        backgroundColor: tdTiledef,
+        backgroundColor: tiledef,
         centerTitle: true,
         title: Text(
           "Flashcards",
           style: TextStyle(
-              fontSize: 25,
-              color: tdText,
+              fontSize: textsizeheader,
+              color: textdef,
             ),
         ),
       ),
@@ -62,11 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.all(10.0),
               height: 200.0,
               width: 400.0,
-              decoration: BoxDecoration(
-                  //color: tdTiledef,
-                  //shape: BoxShape.rectangle,
-                  //borderRadius: BorderRadius.all(Radius.circular(40))
-                ),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -75,12 +72,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 400.0, //width of button
                       child: ElevatedButton(
                         style: ButtonStyle(
-                            backgroundColor: MaterialStatePropertyAll<Color>(tdTiledef,),
+                            backgroundColor: MaterialStatePropertyAll<Color>(tiledef,),
                             shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(40.0),
-                                    side: BorderSide()))),
+                                )
+                            )),
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -90,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "Новый словарь",
-                          style: TextStyle(fontSize: 20, color: tdText),
+                          style: TextStyle(fontSize: textsizedef, color: textdef),
                         ),
                       ),
                     )
@@ -101,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 200.0,
               width: 400.0,
               decoration: BoxDecoration(
-                  color: tdTiledef,
+                  color: tiledef,
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.all(Radius.circular(40))),
               child: Column(
@@ -112,12 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 400.0, //width of button
                       child: ElevatedButton(
                         style: ButtonStyle(
-                            backgroundColor: MaterialStatePropertyAll<Color>(tdTiledef,),
+                            backgroundColor: MaterialStatePropertyAll<Color>(tiledef,),
                             shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(40.0),
-                                    side: BorderSide()))),
+                                    ))),
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -134,11 +132,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             children:[
                               Text(
                                 "Редактировать существующий",
-                                style: TextStyle(fontSize: 20, color: tdText),
+                                style: TextStyle(fontSize: textsizedef, color: textdef),
                               ),
                               Text(
                                 "словарь",
-                                style: TextStyle(fontSize: 20, color:  tdText),
+                                style: TextStyle(fontSize: textsizedef, color:  textdef),
                               ),
                             ]
                           ),),
@@ -151,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 200.0,
               width: 400.0,
               decoration: BoxDecoration(
-                  color: tdTiledef,
+                  color: tiledef,
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.all(Radius.circular(40))),
               child: Column(
@@ -162,12 +160,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 400.0, //width of button
                       child: ElevatedButton(
                         style: ButtonStyle(
-                            backgroundColor: MaterialStatePropertyAll<Color>(tdTiledef,),
+                            backgroundColor: MaterialStatePropertyAll<Color>(tiledef,),
                             shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(40.0),
-                                    side: BorderSide()))),
+                                    ))),
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -177,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           "Тренировать словарь",
-                          style: TextStyle(fontSize: 20, color: tdText),
+                          style: TextStyle(fontSize: textsizedef, color: textdef),
                         ),
                       ),
                     )

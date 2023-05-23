@@ -10,14 +10,15 @@ class Add_new_dictionary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgrounddef,
       appBar: AppBar(
-        backgroundColor: tdTiledef,
+        backgroundColor: tiledef,
         centerTitle: true,
         title: Text(
           "Flashcards",
             style: TextStyle(
-              fontSize: 25,
-              color: tdText,
+              fontSize: textsizeheader,
+              color: textdef,
             ),
         ),
       ),
@@ -29,7 +30,7 @@ class Add_new_dictionary extends StatelessWidget {
                 height: heightwordTile,
                 width: widthwordTile,
                 decoration: BoxDecoration(
-                    color:  tdTiledef,
+                    color:  tiledef,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.all(Radius.circular(40))),
                 child: Column(
@@ -37,7 +38,7 @@ class Add_new_dictionary extends StatelessWidget {
                     children:[
                       Text(
                         "Новый словарь",
-                        style: TextStyle(fontSize: 20, color: tdText),
+                        style: TextStyle(fontSize: textsizedef, color: textdef),
                       ),
                     ]),
               ),
@@ -46,7 +47,7 @@ class Add_new_dictionary extends StatelessWidget {
                 height: heightwordTile,
                 width: widthwordTile,
                 decoration: BoxDecoration(
-                    color: tdTiledef,
+                    color: tiledef,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.all(Radius.circular(40))
                 ),
@@ -60,14 +61,14 @@ class Add_new_dictionary extends StatelessWidget {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(0),
                           prefixIcon:
-                          Icon(Icons.add, color: tdText, size: 20),
+                          Icon(Icons.add, color: textdef, size: 20),
                           prefixIconConstraints: BoxConstraints(
                             maxHeight: 32,
                             minWidth: 32,
                           ),
                           border: InputBorder.none,
                           hintText: "Имя словаря" ,
-                          hintStyle: TextStyle(color: tdText, fontSize: 20),
+                          hintStyle: TextStyle(color: textdef, fontSize: textsizedef),
                         ),
                       ),
                     ),
@@ -79,7 +80,7 @@ class Add_new_dictionary extends StatelessWidget {
                 height: heightwordTile,
                 width: widthwordTile,
                 decoration: BoxDecoration(
-                    color: tdTiledef,
+                    color: tiledef,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.all(Radius.circular(40))
                 ),
@@ -93,14 +94,14 @@ class Add_new_dictionary extends StatelessWidget {
                         decoration: InputDecoration(
                         contentPadding: EdgeInsets.all(0),
                         prefixIcon:
-                        Icon(Icons.add, color: tdText, size: 20),
+                        Icon(Icons.add, color: textdef, size: 20),
                         prefixIconConstraints: BoxConstraints(
                           maxHeight: 32,
                           minWidth: 32,
                         ),
                         border: InputBorder.none,
                         hintText: "Слово" ,
-                        hintStyle: TextStyle(color: tdText, fontSize: 20),
+                        hintStyle: TextStyle(color: textdef, fontSize: textsizedef),
                       ),
                       ),
                     ),
@@ -112,7 +113,7 @@ class Add_new_dictionary extends StatelessWidget {
                 height: heightwordTile,
                 width: widthwordTile,
                 decoration: BoxDecoration(
-                    color: tdTiledef,
+                    color: tiledef,
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.all(Radius.circular(40))
                 ),
@@ -126,14 +127,14 @@ class Add_new_dictionary extends StatelessWidget {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(0),
                           prefixIcon:
-                          Icon(Icons.add, color: tdText, size: 20),
+                          Icon(Icons.add, color: textdef, size: 20),
                           prefixIconConstraints: BoxConstraints(
                             maxHeight: 32,
                             minWidth: 32,
                           ),
                           border: InputBorder.none,
                           hintText: "Значение" ,
-                          hintStyle: TextStyle(color: tdText, fontSize: 20),
+                          hintStyle: TextStyle(color: textdef, fontSize: textsizedef),
                         ),
                       ),
                     ),
